@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		92279812257A48E300B98D74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92279811257A48E300B98D74 /* AppDelegate.swift */; };
 		92279814257A48E300B98D74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92279813257A48E300B98D74 /* SceneDelegate.swift */; };
-		92279816257A48E300B98D74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92279815257A48E300B98D74 /* ViewController.swift */; };
-		92279819257A48E300B98D74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92279817257A48E300B98D74 /* Main.storyboard */; };
 		9227981B257A48E500B98D74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9227981A257A48E500B98D74 /* Assets.xcassets */; };
 		9227981E257A48E500B98D74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9227981C257A48E500B98D74 /* LaunchScreen.storyboard */; };
+		9227982A257A4A8300B98D74 /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92279829257A4A8300B98D74 /* NewsListViewController.swift */; };
+		9227982D257A4AB000B98D74 /* NewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9227982C257A4AB000B98D74 /* NewsListView.swift */; };
+		92279832257A5EC400B98D74 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92279831257A5EC400B98D74 /* Webservice.swift */; };
+		9227983F257A82C200B98D74 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9227983E257A82C200B98D74 /* ArticleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9227980E257A48E300B98D74 /* News App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "News App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92279811257A48E300B98D74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92279813257A48E300B98D74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		92279815257A48E300B98D74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		92279818257A48E300B98D74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9227981A257A48E500B98D74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9227981D257A48E500B98D74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9227981F257A48E500B98D74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92279829257A4A8300B98D74 /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
+		9227982C257A4AB000B98D74 /* NewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListView.swift; sourceTree = "<group>"; };
+		92279831257A5EC400B98D74 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		9227983E257A82C200B98D74 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,39 @@
 			children = (
 				92279811257A48E300B98D74 /* AppDelegate.swift */,
 				92279813257A48E300B98D74 /* SceneDelegate.swift */,
-				92279815257A48E300B98D74 /* ViewController.swift */,
-				92279817257A48E300B98D74 /* Main.storyboard */,
+				9227983D257A82B000B98D74 /* View Models */,
+				92279830257A5EAD00B98D74 /* Services */,
+				92279828257A4A5500B98D74 /* Controllers */,
+				9227982C257A4AB000B98D74 /* NewsListView.swift */,
 				9227981A257A48E500B98D74 /* Assets.xcassets */,
 				9227981C257A48E500B98D74 /* LaunchScreen.storyboard */,
 				9227981F257A48E500B98D74 /* Info.plist */,
 			);
 			path = "News App";
+			sourceTree = "<group>";
+		};
+		92279828257A4A5500B98D74 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				92279829257A4A8300B98D74 /* NewsListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		92279830257A5EAD00B98D74 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				92279831257A5EC400B98D74 /* Webservice.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9227983D257A82B000B98D74 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				9227983E257A82C200B98D74 /* ArticleViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +156,6 @@
 			files = (
 				9227981E257A48E500B98D74 /* LaunchScreen.storyboard in Resources */,
 				9227981B257A48E500B98D74 /* Assets.xcassets in Resources */,
-				92279819257A48E300B98D74 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92279816257A48E300B98D74 /* ViewController.swift in Sources */,
+				9227982A257A4A8300B98D74 /* NewsListViewController.swift in Sources */,
+				9227982D257A4AB000B98D74 /* NewsListView.swift in Sources */,
 				92279812257A48E300B98D74 /* AppDelegate.swift in Sources */,
+				92279832257A5EC400B98D74 /* Webservice.swift in Sources */,
+				9227983F257A82C200B98D74 /* ArticleViewModel.swift in Sources */,
 				92279814257A48E300B98D74 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,14 +178,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		92279817257A48E300B98D74 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				92279818257A48E300B98D74 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9227981C257A48E500B98D74 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
